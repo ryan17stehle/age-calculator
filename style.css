@@ -1,0 +1,154 @@
+/* Variables */
+:root {
+    /* Colors */
+    --purple: hsl(259, 100%, 65%);
+    --light-red: hsl(0, 100%, 67%);
+    --white: hsl(0, 0%, 100%);
+    --off-white: hsl(0, 0%, 94%);
+    --light-grey: hsl(0, 0%, 86%);
+    --smokey-grey: hsl(0, 1%, 44%);
+    --off-black: hsl(0, 0%, 8%);
+    /* Font Size */
+    --input: 32px;
+}
+
+/* Reset */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Styles */
+html {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: var(--off-white);
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+input {
+    padding: .75rem 1rem;
+    width: 88px;
+    height: 54px;
+    border: 1px solid var(--light-grey);
+}
+
+input:focus {
+    border-color: var(--purple);
+    outline: none;
+}
+
+label {
+    color: var(--smokey-grey);
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+img {
+    max-width: 100%;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid var(--light-grey);
+    flex-grow: 1;
+    align-self: center;
+}
+
+/* Utility & Container Styles */
+.container {
+    width: 343px;
+    background-color: var(--white);
+    border-radius: 24px 24px 100px 24px;
+    padding: 3rem 1.5rem;
+}
+
+.button-container {
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    width: 64px;
+    height: 64px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.gap {
+    gap: 1rem;
+}
+
+.gap-2 {
+    gap: 2rem;
+}
+
+.rounded {
+    border-radius: .5rem;
+}
+
+.border-grey {
+    border-color: var(--light-grey);
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.bg-purple {
+    background-color: var(--purple);
+}
+
+.display {
+    font-size: 48px;
+    color: var(--off-black);
+    font-weight: 800;
+}
+
+.text-purple {
+    color: var(--purple);
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.border-none {
+    border: none;   
+}
+
+.circle {
+    border-radius: 50%; 
+}
+
+.error {
+    border-color:red;
+    color: red;
+}
+
+span.error {
+    font-size: 0.5rem;
+    margin-top: 0.5em;
+}

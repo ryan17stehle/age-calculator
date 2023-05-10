@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap" rel="stylesheet">
+  <script src="index.js" defer></script>
+  <title>Frontend Mentor | Age calculator app</title>
+
+
+</head>
+<body>
+  <main class="container flex flex-col gap-2">
+    <form novalidate class="grid gap">
+      <div class="flex flex-col" id="day-container">
+        <label for="day" id="day-label">Day</label>
+        <input id="day" class="rounded border-grey inline-block" type="number" min="1" max="31" required placeholder="DD">
+        <span class="error" id="day-error"></span>
+      </div>
+      <div class="flex flex-col">
+        <label for="month" id="month-label">Month</label>
+        <input id="month" class="rounded border-grey inline-block" type="number" min="1" max="12" required placeholder="MM">
+        <span class="error" id="month-error"></span>
+      </div>
+      <div class="flex flex-col">
+        <label for="year" id="year-label">Year</label>
+        <input id="year"class="rounded border-grey inline-block" type="number" min="1900" max="2023" required placeholder="YYYY">
+        <span class="error" id="year-error"></span>
+      </div>
+    </form>
+    <section class="flex">
+      <hr>
+      <div class="bg-purple button-container">
+        <button class="bg-purple pointer border-none circle" id="submit"><img src="./assets/images/icon-arrow.svg" alt="down arrow"></button>
+      </div>
+      <hr>
+    </section>
+    <section>
+      <h2 class="display"><span class="text-purple" id="years-display">--</span> years</h2>
+      <h2 class="display"><span class="text-purple" id="months-display">--</span> months</h2>
+      <h2 class="display"><span class="text-purple" id="days-display">--</span> days</h2>
+    </section>
+  </main>
+
+</body>
+</html>
